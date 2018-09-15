@@ -4,40 +4,114 @@
 <meta charset="utf-8">
 <title>Positioning</title>
 <style>
-body, h1, p {
-	margin:0;
-	padding:0;
+div,body,h1,p{
+	margin : 0%
+	padding: 0%
 }
-.block {
-	width:29%;
-	float:left;
-	margin:2%;
-	background-color:lightblue;
+div{
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-#parent-block {
-	height:500px;
-	background-color:pink;
+/* ----------------Relative Positioning----------------------- */
+/* #block1{
+	position: relative;
+	background-color: lightblue;
+}
+#block2{
+	background-color: lightgrey;
+	position: relative;
+		left:502px;
+}
+#block3{
+	position: relative;
+	background-color: pink;
+	left: 485px;
+}
+#block4{
+	position: relative;
+	background-color: yellow;
+	left:470px;
+} */
+/* ----------Absoulte Positioning -----------------*/
+/* #block1{
+	position: absolute;
+	background-color: lightblue;
+	z-index: 1;
+}
+#block2{
+	background-color: lightgrey;
+	position: absolute;
+	right: 810px;
+	left: 515px
+	top:210px;
+	z-index: 2;
+}
+#block3{
+	position: absolute;
+	background-color: pink;
+	top:413px;
+	left:1020px;
+	z-index: 3;
+}
+#block4{
+	position: absolute;
+	background-color: yellow;
+	top:617px;
+	left:1525px;
+	z-index: 4;
+} */
+
+#block1{
+	position: absolute;
+	background-color: lightblue;
+}
+#block2{
+	background-color: lightgrey;
+	position: relative;
+		/* left:502px; */
+		left:27.5%;
+}
+#block3{
+	position: relative;
+	background-color: pink;
+	/* left: 485px; */
+	left:27%;
+}
+#block4{
+	position: relative;
+	background-color: yellow;
+	/* left:470px; */
+	left:26.5%;
 }
 </style>
 </head>
 
 <body>
-<div id="parent-block">
-	<div class="block">
+	<div id="block1">
 		<h1>Heading 1</h1>
 		<p>Paragraph 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
-	<div class="block" id="block2">
+	<div id="block2">
 		<h1>Heading 2</h1>
-		 <p>Paragraph 2 - Mauris et feugiat sapien. Aliquam erat ligula, condimentum id velit at, porta suscipit sem. Integer pharetra ipsum non nibh finibus, sit amet rutrum purus condimentum. Nullam imperdiet sodales lorem, nec aliquam diam mattis quis. Phasellus congue rutrum nisl, eu efficitur ipsum dictum id. Vestibulum vel diam et ex accumsan aliquet et vel quam. Donec tristique ultrices tellus eu viverra. Phasellus pulvinar non lacus in iaculis. Sed condimentum velit odio, vel auctor sapien vestibulum eget. Curabitur quis purus bibendum nisl fringilla iaculis at a quam. Nulla venenatis pellentesque enim non faucibus. Aenean eu mattis libero, sit amet tempor eros. Duis sit amet pulvinar ipsum. Proin et suscipit ligula. Vestibulum lobortis laoreet laoreet.</p>
+		 <p>Paragraph 2 - Mauris et feugiat sapien. Aliquam erat ligula, condimentum id velit at, porta suscipit sem. Integer pharetra ipsum non nibh finibus, sit amet rutrum purus condimentum. Nullam imperdiet sodales lorem, nec aliquam diam mattis quis. Phasellus congue rutrum nisl, eu efficitur ipsum dictum id. Vestibulum vel diam et ex accumsan aliquet et vel quam. Donec tristique ultrices tellus eu viverra. Phasellus pulvinar non lacus in iaculis. Sed condimentum velit odio, vel auctor sapien vestibulum eget. Curabitur quis purus bibendum nisl fringilla iaculis at a quam. Nulla venenatis pellentesque enim non faucibus. Aenean eu mattis libero, sit amet tempor eros. Duis sit amet pulvinar ipsum. Proin et suscipit ligula. Vestibulum lobortis laoreet laoreet. Mauris et feugiat sapien. Aliquam erat ligula, condimentum id velit at, porta suscipit sem. Integer pharetra ipsum non nibh finibus, sit amet rutrum purus condimentum. Nullam imperdiet sodales lorem, nec aliquam diam mattis quis. Phasellus congue rutrum nisl, eu efficitur ipsum dictum id. Vestibulum vel diam et ex accumsan aliquet et vel quam. Donec tristique ultrices tellus eu viverra. Phasellus pulvinar non lacus in iaculis. Sed condimentum velit odio, vel auctor sapien vestibulum eget. Curabitur quis purus bibendum nisl fringilla iaculis at a quam. Nulla venenatis pellentesque enim non faucibus. Aenean eu mattis libero, sit amet tempor eros. Duis sit amet pulvinar ipsum. Proin et suscipit ligula. Vestibulum lobortis laoreet laoreet.</p>
+		 Mauris et feugiat sapien. Aliquam erat ligula, condimentum id velit at, porta suscipit sem. Integer pharetra ipsum non nibh finibus, sit amet rutrum purus condimentum. Nullam imperdiet sodales lorem, nec aliquam diam mattis quis. Phasellus congue rutrum nisl, eu efficitur ipsum dictum id. Vestibulum vel diam et ex accumsan aliquet et vel quam. Donec tristique ultrices tellus eu viverra. Phasellus pulvinar non lacus in iaculis. Sed condimentum velit odio, vel auctor sapien vestibulum eget. Curabitur quis purus bibendum nisl fringilla iaculis at a quam. Nulla venenatis pellentesque enim non faucibus. Aenean eu mattis libero, sit amet tempor eros. Duis sit amet pulvinar ipsum. Proin et suscipit ligula. Vestibulum lobortis laoreet laoreet.</p>
+		 Mauris et feugiat sapien. Aliquam erat ligula, condimentum id velit at, porta suscipit sem. Integer pharetra ipsum non nibh finibus, sit amet rutrum purus condimentum. Nullam imperdiet sodales lorem, nec aliquam diam mattis quis. Phasellus congue rutrum nisl, eu efficitur ipsum dictum id. Vestibulum vel diam et ex accumsan aliquet et vel quam. Donec tristique ultrices tellus eu viverra. Phasellus pulvinar non lacus in iaculis. Sed condimentum velit odio, vel auctor sapien vestibulum eget. Curabitur quis purus bibendum nisl fringilla iaculis at a quam. Nulla venenatis pellentesque enim non faucibus. Aenean eu mattis libero, sit amet tempor eros. Duis sit amet pulvinar ipsum. Proin et suscipit ligula. Vestibulum lobortis laoreet laoreet.</p>
+</p>
 	 </div>
-	 <div class="block">
+	 <div id="block3">
 		<h1>Heading 3</h1>
-		<p>Paragraph 3 - Nam feugiat est varius sem auctor, vitae dictum augue laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent quam ex, placerat a urna sed, vulputate commodo enim. Nullam imperdiet lorem mauris, nec finibus purus finibus eget. Vestibulum lacinia nisi sed eleifend mollis. Cras eleifend sit amet sem a luctus. Morbi commodo, dolor vel blandit interdum, orci lacus varius ipsum, vel viverra orci erat at nibh. Nunc dignissim purus risus, eu facilisis justo mattis a. Vivamus ex urna, rutrum ac lectus vel, molestie vulputate nisi. Quisque lacinia interdum laoreet.</p> 
+		<p>Paragraph 3 - Nam feugiat est varius sem auctor, vitae dictum augue laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent quam ex, placerat a urna sed, vulputate commodo enim. Nullam imperdiet lorem mauris, nec finibus purus finibus eget. Vestibulum lacinia nisi sed eleifend mollis. Cras eleifend sit amet sem a luctus. Morbi commodo, dolor vel blandit interdum, orci lacus varius ipsum, vel viverra orci erat at nibh. Nunc dignissim purus risus, eu facilisis justo mattis a. Vivamus ex urna, rutrum ac lectus vel, molestie vulputate nisi. Quisque lacinia interdum laoreet.</p>
 	</div>
-	<div id="special-message">
+	<div id="block4">
 		Special Message
 	</div>
-</div>
+
+
 </body>
 </html>
